@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".listquanao">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            android:id="@+id/tvDsQuanAo"
+            android:gravity="center"
+            android:textColor="#FFEB3B"
+            android:text="Danh sách QuanAo"
+            android:textSize="14pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ListView
+            android:layout_width="0pt"
+            android:layout_height="0pt"
+            android:id="@+id/lvDsQuanAo"
+            app:layout_constraintTop_toBottomOf="@+id/tvDsQuanAo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btnThem"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnThem"
+            android:text="Thêm"
+            android:textColor="#FFEB3B"
+            android:backgroundTint="#3F51B5"
+            android:textStyle="bold"
+            android:textSize="10pt"
+            app:layout_constraintBottom_toTopOf="@+id/btnTroVe"
+            app:layout_constraintTop_toBottomOf="@+id/lvDsQuanAo"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTroVe"
+            android:text="Trở về"
+            android:textColor="#FFEB3B"
+            android:backgroundTint="#3F51B5"
+            android:textStyle="bold"
+            android:textSize="10pt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnThem"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+

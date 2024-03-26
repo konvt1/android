@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quanaoform">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:id="@+id/tvFormQuanAo"
+        android:gravity="center"
+        android:textColor="#FFEB3B"
+        android:text="Form Quan AO"
+        android:textSize="14pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tvTenQuanAo"
+        android:layout_width="wrap_content"
+        android:layout_height="0pt"
+        android:gravity="center_vertical"
+        android:text="Tên: "
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="@id/etTenQuanAo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFormQuanAo" />
+
+    <EditText
+        android:id="@+id/etTenQuanAo"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvTenQuanAo"
+        app:layout_constraintTop_toTopOf="@id/tvTenQuanAo" />
+    <TextView
+        android:id="@+id/tvNcc"
+        android:layout_width="wrap_content"
+        android:layout_height="0pt"
+        android:gravity="center_vertical"
+        android:text="Nhà cung cấp: "
+        android:textSize="12pt"
+        app:layout_constraintBottom_toBottomOf="@id/spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTenQuanAo" />
+    />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0pt"
+        android:layout_height="20pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvNcc"
+        app:layout_constraintTop_toTopOf="@id/tvNcc" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:gravity="center_vertical"
+        android:text="Giá: "
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="@id/etPrice"
+        app:layout_constraintEnd_toEndOf="@id/tvTenQuanAo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNcc" />
+
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvPrice"
+        app:layout_constraintTop_toTopOf="@id/tvPrice" />
+
+    <EditText
+        android:id="@+id/etSoLuong"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvSoLuong"
+        app:layout_constraintTop_toTopOf="@id/tvSoLuong" />
+    <TextView
+        android:id="@+id/tvSoLuong"
+        android:layout_width="wrap_content"
+        android:layout_height="0pt"
+        android:gravity="center_vertical"
+        android:text="Số lượng: "
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="@id/etSoLuong"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPrice" />
+    <EditText
+        android:id="@+id/etMota"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvMota"
+        app:layout_constraintTop_toTopOf="@id/tvMota" />
+    <TextView
+        android:id="@+id/tvMota"
+        android:layout_width="wrap_content"
+        android:layout_height="0pt"
+        android:gravity="center_vertical"
+        android:text="Mô tả: "
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="@id/etMota"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSoLuong" />
+
+
+
+    <ImageView
+        android:id="@+id/imageQuanAo"
+        android:layout_width="183dp"
+        android:layout_height="175dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMota"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <Button
+        android:id="@+id/btnChon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn"
+        android:textColor="#FFEB3B"
+        android:textSize="13pt"
+        android:backgroundTint="#3F51B5"
+        app:layout_constraintStart_toEndOf="@id/imageQuanAo"
+        app:layout_constraintTop_toTopOf="@id/imageQuanAo"
+        app:layout_constraintBottom_toBottomOf="@id/imageQuanAo"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLuu"
+        android:text="Lưu"
+        android:textColor="#FFEB3B"
+        android:backgroundTint="#3F51B5"
+        android:textStyle="bold"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toTopOf="@+id/btnTroVe"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTroVe"
+        android:text="Trở về"
+        android:textColor="#FFEB3B"
+        android:backgroundTint="#3F51B5"
+        android:textStyle="bold"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

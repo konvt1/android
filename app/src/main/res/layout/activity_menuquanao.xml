@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menuquanao">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:id="@+id/tvMenu"
+        android:gravity="center"
+        android:textColor="#FFEB3B"
+        android:text="Menu"
+        android:textSize="14pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:layout_marginTop="20pt"
+        android:id="@+id/btnQuanAo"
+        android:layout_width="150pt"
+        android:layout_height="wrap_content"
+        android:text="Danh sách Quan Ao"
+        android:textColor="#FFEB3B"
+        android:backgroundTint="#3F51B5"
+        android:textSize="10pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMenu" />
+    <Button
+        android:layout_marginTop="20pt"
+        android:id="@+id/btnNhaCungCap"
+        android:layout_width="150pt"
+        android:layout_height="wrap_content"
+        android:text="Danh sách nhà cung cấp"
+        android:textColor="#FFEB3B"
+        android:backgroundTint="#3F51B5"
+        android:textSize="10pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnQuanAo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
